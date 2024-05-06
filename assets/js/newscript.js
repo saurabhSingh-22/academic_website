@@ -15,13 +15,13 @@
 // sidenav
 function openNav() {
   document.getElementById("mySidenav").style.width = "380px";
-  document.getElementById("sidelayer").style.opacity = 1;
+  document.getElementById("sidelayer").style.visibility = "visible";
   document.getElementById("body").style.overflow = "hidden";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("sidelayer").style.opacity = 0;
+  document.getElementById("sidelayer").style.visibility = "hidden";
   document.getElementById("body").style.overflow = "auto";
 }
 
