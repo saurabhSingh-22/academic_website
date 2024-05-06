@@ -37,7 +37,7 @@
 
 </head>
 
-<body class="index-page">
+<body class="index-page" id="body">
   <div class="social-icons">
     <div class="container-fluid container-xl">
       <ul class="social-icons-list">
@@ -55,8 +55,33 @@
       <a href="#" class="logo d-flex align-items-center me-auto">
         <img src="assets/img/bacadslogo.png" alt="">
       </a>
+      <!-- Sidenav added -->
 
-      <nav id="navmenu" class="navmenu">
+      <div class="btn hamburger-btn not-active" onclick="openNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+
+      <div id="mySidenav" class="sidenav">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+          <li><a href="#" class="">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Connect with academics</a></li>
+          <li><a href="#">Connect with industry</a></li>
+          <li><a href="#">Our services</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="full-layer" id="sidelayer"></div>
+
+
+      <!-- <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#" class="">Home</a></li>
           <li><a href="#">About us</a></li>
@@ -69,7 +94,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#">Contact us</a>
+      <a class="btn-getstarted" href="#">Contact us</a> -->
 
     </div>
   </header>
@@ -87,7 +112,7 @@
         </div>
         <div class="content-layer">
           <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center m-view">
               <div class="col">
                 <div class="d-flex flex-column heading-contents gap-4">
                   <h2 data-aos="fade-up-left" data-aos-delay="300" data-aos-duration="300" class="">A plateform where
