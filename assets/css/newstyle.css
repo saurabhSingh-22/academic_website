@@ -518,12 +518,26 @@
 .academic-corporate-sec {
   position: absolute;
   left: 50px;
-  bottom: 5rem;
+  bottom: 120px;
   width: 100%;
   text-align: center;
 
 }
-
+.academic-corporate-sec .primary-link{
+color: var(--text-secondary-color);
+font-size: 20px;
+text-shadow: 1px 1px 0px #ccc;
+text-decoration: underline;
+}
+.academic-corporate-sec .primary-link:hover{
+  color: var(--default-color);
+}
+.academic-corporate-sec .secondary-link{
+  font-size: 20px;
+  text-shadow: 1px 1px 0px #ccc;
+  text-decoration: underline;
+  color:var(--accent-color)
+}
 .big-section {
   height: calc(100vh - 90px);
 }
