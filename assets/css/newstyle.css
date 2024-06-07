@@ -6,6 +6,15 @@
   right: 0;
 }
 
+/* common-bg */
+.bg-abstract {
+  background-image: url('../img/myimages/abstract-img.png');
+  background-size: cover;
+  backdrop-filter: opacity(0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Common button */
 .theme-button {
   background-color: var(--accent-color);
@@ -269,7 +278,7 @@
 .card-intro-data {
   height: 100%;
   border-radius: 12px;
-  background-color: var(--white);
+  background-color: #ffffff;
   box-shadow: 4px 4px 16px 1px #ccc;
 }
 
@@ -523,21 +532,68 @@
   text-align: center;
 
 }
-.academic-corporate-sec .primary-link{
-color: var(--text-secondary-color);
-font-size: 20px;
-text-shadow: 1px 1px 0px #ccc;
-text-decoration: underline;
-}
-.academic-corporate-sec .primary-link:hover{
-  color: var(--default-color);
-}
-.academic-corporate-sec .secondary-link{
+
+.academic-corporate-sec .primary-link {
+  color: var(--text-secondary-color);
   font-size: 20px;
   text-shadow: 1px 1px 0px #ccc;
   text-decoration: underline;
-  color:var(--accent-color)
 }
+
+.academic-corporate-sec .primary-link:hover,
+.academic-corporate-sec .secondary-link:hover {
+  color: var(--default-color);
+}
+
+.academic-corporate-sec .secondary-link {
+  font-size: 20px;
+  text-shadow: 1px 1px 0px #ccc;
+  text-decoration: underline;
+  color: var(--accent-color)
+}
+
 .big-section {
-  height: calc(100vh - 90px);
+  min-height: calc(100vh - 60px);
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  /* Adjust the gap between columns and rows as needed */
+}
+
+.grid-item {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* internal page main banner */
+.banner {
+  position: relative;
+  background-image: url('../img/myimages/picture3.jpg');
+  background-size: cover;
+  background-position: 50% 35%;
+  height: 260px;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black with 50% opacity */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  color: white;
+  font-size: 2rem;
+  /* Adjust the font size as needed */
+  text-align: center;
 }
