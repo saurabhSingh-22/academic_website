@@ -341,9 +341,6 @@
 }
 
 @media only screen and (max-width:991px) {
-  .hero {
-    height: 100% !important;
-  }
 
   .video-section {
     height: 100%;
@@ -421,107 +418,6 @@
   color: #0092D5;
 }
 
-@keyframes zoom-in {
-  0% {
-    transform: scale(1, 1);
-  }
-
-  50% {
-    transform: scale(1.2, 1.2);
-  }
-
-  100% {
-    transform: scale(1, 1);
-  }
-}
-
-@media only screen and (max-width:1199px) {
-
-  .slider-stage .slider-item-text h1 {
-    font-size: 2.8rem;
-    margin-left: 18%;
-    margin-bottom: 5px;
-  }
-
-  .slider-stage .slider-item-text h2.top-slider-text {
-    font-size: 2rem;
-    margin-bottom: 4px;
-  }
-
-  .slider-stage .slider-item-text h2.bottom-slider-text {
-    font-size: 2rem;
-  }
-
-  .slider-stage .slider-item-bulb img {
-    max-width: 76px;
-    bottom: 300px;
-    right: 160px;
-
-  }
-
-  .slider-stage .slider-item-men img {
-    max-width: 78px;
-    bottom: 304px;
-  }
-}
-
-@media only screen and (max-width:991px) {
-  .slider-stage .slider-item-text h1 {
-    font-size: 2.8rem;
-    margin-left: 0;
-    margin-bottom: 5px;
-  }
-
-  .slider-stage .slider-item-text h2.top-slider-text {
-    font-size: 2rem;
-    margin-bottom: 4px;
-    margin-left: 0;
-  }
-
-  .slider-stage .slider-item-bulb img {
-    max-width: 90px;
-    bottom: 320px;
-    right: 10px;
-  }
-
-  .slider-stage .slider-item-men img {
-    max-width: 78px;
-    bottom: 325px;
-  }
-}
-
-@media only screen and (max-width:767px) {
-  .xs-mb-66 {
-    margin-bottom: 66% !important;
-  }
-
-  .slider-stage .slider-item-text {
-    bottom: 80%;
-  }
-
-  .slider-stage .slider-item-text h2.top-slider-text {
-    font-size: 2rem;
-    margin-bottom: 4px;
-    margin-left: 0;
-  }
-
-  .slider-stage .slider-item-text h2.bottom-slider-text {
-    font-size: 2rem;
-    margin-left: 0;
-  }
-
-  .slider-stage .slider-item-bulb img {
-    max-width: 90px;
-    bottom: 284px;
-    right: 10px;
-  }
-
-  .slider-stage .slider-item-men img {
-    max-width: 78px;
-    bottom: 284px;
-  }
-}
-
 
 /* academic-corporate-sec */
 .academic-corporate-sec {
@@ -596,4 +492,121 @@
   font-size: 2rem;
   /* Adjust the font size as needed */
   text-align: center;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@media only screen and (max-width:1199px) {
+
+  .slider-stage .slider-item-text h1 {
+    font-size: 2.8rem;
+    margin-left: 18%;
+    margin-bottom: 5px;
+  }
+
+  .slider-stage .slider-item-text h2.top-slider-text {
+    font-size: 2rem;
+    margin-bottom: 4px;
+  }
+
+  .slider-stage .slider-item-text h2.bottom-slider-text {
+    font-size: 2rem;
+  }
+
+  .slider-stage .slider-item-bulb img {
+    max-width: 76px;
+    bottom: 300px;
+    right: 160px;
+
+  }
+
+  .slider-stage .slider-item-men img {
+    max-width: 78px;
+    bottom: 304px;
+  }
+}
+
+@media only screen and (max-width:991px) {
+  .grid-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-intro-data{
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .academic-corporate-sec{
+    left: 0;
+  }
+  .slider-stage .slider-item-text h1 {
+    font-size: 1.8rem;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .slider-stage .slider-item-text h2.top-slider-text {
+    font-size: 2rem;
+    margin-bottom: 4px;
+    margin-left: 0;
+  }
+
+  .slider-stage .slider-item-bulb img {
+    max-width: 90px;
+    bottom: 320px;
+    right: 10px;
+  }
+
+  .slider-stage .slider-item-men img {
+    max-width: 78px;
+    bottom: 325px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .xs-mb-66 {
+    margin-bottom: 66% !important;
+  }
+  .slider-stage{
+    padding: 0 20px;
+  }
+  .slider-stage .slider-item-text {
+    bottom: 70%;
+  }
+
+  .slider-stage .slider-item-text h2.top-slider-text {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+    margin-left: 0;
+  }
+
+  .slider-stage .slider-item-text h2.bottom-slider-text {
+    font-size: 1.8rem;
+    margin-left: 0;
+  }
+
+  .slider-stage .slider-item-bulb img {
+    max-width: 90px;
+    bottom: 284px;
+    right: 10px;
+  }
+
+  .slider-stage .slider-item-men img {
+    max-width: 78px;
+    bottom: 284px;
+  }
+  .grid-container{
+    flex-direction: column;
+  }
 }
