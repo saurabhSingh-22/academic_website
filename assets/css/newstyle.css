@@ -28,6 +28,17 @@
   color: #ffffff;
 }
 
+/* common list css */
+.bullet-list {
+  list-style-type: disc !important;
+}
+
+/* common shadow aroung image */
+.shadow-img {
+  box-shadow: 6px 6px 17px 0px #ccc;
+}
+
+/* ------------------------------------------- */
 .social-icons {
   background-color: #b5d6ff;
 }
@@ -52,6 +63,10 @@
 }
 
 #hero .img-cover img {
+  animation: zoom-in-zoom-out 5s ease-in-out infinite;
+}
+
+.zoom-animation {
   animation: zoom-in-zoom-out 5s ease-in-out infinite;
 }
 
@@ -494,6 +509,22 @@
   text-align: center;
 }
 
+.focus-content {
+  background-color: #0092D5;
+  color: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: var(--text-secondary-color)
+  }
+}
+
 @keyframes zoom-in {
   0% {
     transform: scale(1, 1);
@@ -539,17 +570,20 @@
 }
 
 @media only screen and (max-width:991px) {
-  .grid-container{
+  .grid-container {
     display: flex;
     flex-wrap: wrap;
   }
-  .card-intro-data{
+
+  .card-intro-data {
     height: auto;
     margin-bottom: 15px;
   }
-  .academic-corporate-sec{
+
+  .academic-corporate-sec {
     left: 0;
   }
+
   .slider-stage .slider-item-text h1 {
     font-size: 1.8rem;
     margin-left: 0;
@@ -578,9 +612,11 @@
   .xs-mb-66 {
     margin-bottom: 66% !important;
   }
-  .slider-stage{
+
+  .slider-stage {
     padding: 0 20px;
   }
+
   .slider-stage .slider-item-text {
     bottom: 70%;
   }
@@ -606,7 +642,8 @@
     max-width: 78px;
     bottom: 284px;
   }
-  .grid-container{
+
+  .grid-container {
     flex-direction: column;
   }
 }
