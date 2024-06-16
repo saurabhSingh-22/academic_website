@@ -646,4 +646,14 @@
   .grid-container {
     flex-direction: column;
   }
+  .xs-block-view{
+    display: block!important;
+  }
+  .xs-mb-2{
+    margin-bottom: 10px;
+  }
+  .features-details .features-item ul{
+    flex-direction: column;
+    align-items: baseline !important;
+  }
 }
