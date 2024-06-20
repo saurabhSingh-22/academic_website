@@ -487,6 +487,7 @@
   background-size: cover;
   background-position: 50% 35%;
   height: 260px;
+  display: none!important;
 }
 
 .banner-overlay {
